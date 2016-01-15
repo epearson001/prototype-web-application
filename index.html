@@ -58,8 +58,8 @@
 					  <li role="presentation"><a class="btn btn-link" href="#">Menu Item 4</a></li>
 					</ul>
 					<div class="btn-toolbar pull-right">
-						<a class="btn btn-primary" href="#" role="button">Post Jobs</a>
-						<a class="btn btn-default" role="button" data-toggle="modal" data-target="#myModal">Login/Register</a>
+						<a class="btn btn-primary" role="button" data-toggle="modal" data-target="#signupModal">Post Jobs</a>
+						<a class="btn btn-default" role="button" data-toggle="modal" data-target="#loginModal">Login/Register</a>
 					</div>
 				</div>
 			</div>
@@ -478,11 +478,22 @@
 		</div>
 		</div>
 
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-remote="modals/login.html">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content modal-content-sm" style="width:350px;margin:0 auto;">
-		    </div>
-		  </div>
+		<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" data-remote="modals/login.html">
+			<button type="button" class="close full-window-close" data-dismiss="modal" aria-label="Close"><span class="cancel-text">Cancel & Close</span> &nbsp;<i class="fa fa-times"></i></button>
+			<div class="modal-dialog" role="document">
+				<h3 class="modal-greeting"><span>Great!</span> Let's get started.</h3>
+				<div class="modal-content modal-content-sm" style="width:350px;margin:0 auto;">
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModal" data-remote="modals/signup.html">
+			<button type="button" class="close full-window-close" data-dismiss="modal" aria-label="Close"><span class="cancel-text">Cancel & Close</span> &nbsp;<i class="fa fa-times"></i></button>
+			<div class="modal-dialog" role="document">
+				<h3 class="modal-greeting"><span>Welcome back!</span> Please log in below.</h3>
+				<div class="modal-content modal-content-sm" style="width:350px;margin:0 auto;">
+				</div>
+			</div>
 		</div>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

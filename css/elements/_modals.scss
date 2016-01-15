@@ -5,8 +5,155 @@ The file manages all button styles.
 
 .modal-header {
 	padding: 25px 30px;
+	border-bottom: 0;
+	background-color: #1f3863;
+	color: white;
+	text-align: center;
+
+	&.with-tabs {
+		padding: 0;
+		text-align: left;
+
+		.modal-title {
+			padding: 20px;
+			text-align: center;
+			color: #4269ae;
+		}
+
+		.active {
+			background-color: #2c4b82;
+		}
+
+		li {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .modal-body {
 	padding: 25px 30px;
+}
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal-content {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.modal-backdrop {
+	background-color: #335590;
+}
+
+.modal-backdrop.in {
+	opacity: 0.95;
+}
+
+.full-window-close {
+    float: right;
+    color: #fff;
+    text-shadow: none;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    position: fixed;
+    right: 15px;
+    top: 15px;
+
+    .cancel-text {
+		font-weight: 100;
+		font-size: 14px;
+		position: relative;
+		top: -2px;
+		color: #7799d0;
+
+		&:hover {
+			color: $white;
+		} 
+    }
+
+    &:hover {
+    	opacity: .80;
+    }
+
+    &:hover .fa,
+    &:hover .cancel-text {
+    	color: $white;
+    }
+}
+
+.modal-greeting {
+	color: white;
+    width: 350px;
+    margin: 0 auto 25px;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+
+    span {
+    	font-weight: 400;
+    }
+}
+
+.action-icon {
+	height: 60px;
+    margin-top: 23px;
+    text-align: center;
+    float: left;
+    width: 100%;
+    pointer-events: none;
+}
+
+.background-icon {
+    position: relative;
+    left: -10px;
+    color: #4269ae;
+}
+
+.foreground-icon {
+    position: relative;
+    top: -40px;
+    color: #2c4b82;
+    left: -1px;
+    font-size: 1.65em;
+    color: #1f3863;
+
+    &.fa-user-plus {
+	    left: 2px;    	
+    }
+}
+
+.nav.modal-tabs li {
+	padding: 0;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.80;
+	}
+
+	&.active .foreground-icon {
+		color: #2c4b82;
+	}
+
+	&.active .background-icon,
+	&.active h4 {
+		color: $white;
+	}
 }

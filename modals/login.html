@@ -1,38 +1,67 @@
 		<!-- Login Modal -->
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="TOP: 5PX; POSITION: relative;">&times;</span></button>
-			<h4 class="modal-title" id="myModalLabel">Log in</h4>
+		<div class="modal-header with-tabs">
+
+			<!-- Nav tabs -->
+			  <ul class="nav nav-tabs modal-tabs" role="tablist">
+			    <li role="presentation" class="active col-md-6">
+			    	<div class="action-icon">
+			    		<span class="fa-stack">
+				    		<i class="fa fa-circle fa-4x background-icon"></i>
+				    		<i class="fa fa-sign-in fa-2x foreground-icon"></i>
+			    		</span>
+			    	</div>
+			    	<h4 class="modal-title" href="#login" aria-controls="login" role="tab" data-toggle="tab">Log in</h4></li>
+			    <li role="presentation" class="col-md-6">
+			    	<div class="action-icon">
+			    		<span class="fa-stack">
+				    		<i class="fa fa-circle fa-4x background-icon"></i>
+				    		<i class="fa fa-user-plus fa-2x foreground-icon"></i>
+			    		</span>
+			    	</div>
+			    	<h4 class="modal-title" href="#register" aria-controls="register" role="tab" data-toggle="tab">Register</h4></li>
+			  </ul>
+
 		</div>
 		<div class="modal-body">
-			<form>
-				<div class="form-group">
-					<label class="control-label" or="exampleInputEmail1">Email Address</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address">
-					</div>
+
+			  <!-- Tab panes -->
+			  <div class="tab-content">
+			    <div role="tabpanel" class="tab-pane active" id="login">
+					<form>
 					<div class="form-group">
-						<label class="control-label" for="exampleInputPassword1">Password</label>
-						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-					</div>
-					<div class="checkbox" style="margin-top: -5PX;margin-bottom: 20px;">
-						<label style="color: #aaa;">
-							<input type="checkbox"> Keep me logged in
-						</label>
-					</div>
-				<button type="submit" class="btn btn-primary btn-block">Submit</button>
-				<p class="help-block text-center row-spacing-sm">You accept our <a href="...">terms</a> and <a href="...">policies</a>.</p>
-			<form>
-			<div class="row-spacing-xs"><div class="header-rule"><span>OR</span></div></div> 
-			<div class="row-spacing-md" style="color: #aaa;">Create an account</div>    
-			<div class="row-spacing-xs clearfix" style="color: #aaa;">
-				<a class="btn btn-default" role="button">Candidate Sign Up</a> &nbsp;
-				<a class="btn btn-default" role="button">Employer Sign Up</a>
-			</div>
+						<label class="control-label" or="exampleInputEmail1">Email Address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address">
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="exampleInputPassword1">Password</label>
+							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						</div>
+						<div class="checkbox" style="margin-top: -5PX;margin-bottom: 20px;">
+							<label style="color: #aaa;">
+								<input type="checkbox"> Keep me logged in
+							</label>
+						</div>
+					<button type="submit" class="btn btn-primary btn-block">Submit</button>
+					<p class="help-block text-center row-spacing-sm">You accept our <a href="...">terms</a> and <a href="...">policies</a>.</p>
+				<form>
+				<div class="row-spacing-xs"><div class="header-rule"><span>OR</span></div></div>  
+				<div class="row-spacing-lg" style="color: #aaa;padding-bottom: 0;">
+					<button id="createAccount" type="button" class="btn btn-default btn-block">Create Account</button>
+				</div>
+
+			    </div>
+			    <div role="tabpanel" class="tab-pane" id="register">tab 2</div>
+			  </div>
 		</div>
 
 		<script>
 			$('.form-control').on('focus blur', function (e) {
 				$(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
 			}).trigger('blur');
+
+			$('#createAccount').click(function(){
+				$('[href*="register"]').trigger('click');
+			});
 		</script>
 
 		<style>
