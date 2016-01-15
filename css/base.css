@@ -14,9 +14,9 @@ a,
 .fa,
 a:hover,
 .fa:hover {
-  -webkit-transition: color .3s;
+  -webkit-transition: color .2s;
   /* For Safari 3.0 to 6.0 */
-  transition: color .3s;
+  transition: color .2s;
   /* For modern browsers */
   -webkit-transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
   -moz-transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -31,6 +31,10 @@ a:hover,
 Typography SCSS File
 The file manages the fonts that are used globally within this application.
 */
+h4,
+.modal-title {
+  font-weight: 400; }
+
 /*!
 Content Spacing SCSS File
 The file manages the space that exists between content sections that are used globally within this application.
@@ -7398,7 +7402,17 @@ The file manages the social media menu that resides within the header section.
   margin-bottom: 0; }
 
 .header-rule {
-  border-bottom: 1px solid #e2e2e2; }
+  border-bottom: 1px solid #e2e2e2;
+  position: relative; }
+  .header-rule span {
+    position: absolute;
+    top: -10px;
+    text-align: center;
+    padding: 0 10px;
+    background-color: #fff;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #aaa; }
 
 /*!
 Menu Menu Functions SCSS File
@@ -7458,6 +7472,25 @@ The file manages the styles governing responsive hero background images.
 
 .carousel-inner {
   overflow: visible; }
+
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity; }
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0; }
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1; }
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0); }
+.carousel-fade .carousel-control {
+  z-index: 2; }
 
 /*!
 Homepage Hero SCSS File
@@ -7552,3 +7585,13 @@ The file manages all content row styles.
 
 body {
   position: relative; }
+
+/*!
+Modals SCSS File
+The file manages all button styles.
+*/
+.modal-header {
+  padding: 25px 30px; }
+
+.modal-body {
+  padding: 25px 30px; }

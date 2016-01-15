@@ -1,0 +1,79 @@
+		<!-- Login Modal -->
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="TOP: 5PX; POSITION: relative;">&times;</span></button>
+			<h4 class="modal-title" id="myModalLabel">Log in</h4>
+		</div>
+		<div class="modal-body">
+			<form>
+				<div class="form-group">
+					<label class="control-label" or="exampleInputEmail1">Email Address</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address">
+					</div>
+					<div class="form-group">
+						<label class="control-label" for="exampleInputPassword1">Password</label>
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					</div>
+					<div class="checkbox" style="margin-top: -5PX;margin-bottom: 20px;">
+						<label style="color: #aaa;">
+							<input type="checkbox"> Keep me logged in
+						</label>
+					</div>
+				<button type="submit" class="btn btn-primary btn-block">Submit</button>
+				<p class="help-block text-center row-spacing-sm">You accept our <a href="...">terms</a> and <a href="...">policies</a>.</p>
+			<form>
+			<div class="row-spacing-xs"><div class="header-rule"><span>OR</span></div></div> 
+			<div class="row-spacing-md" style="color: #aaa;">Create an account</div>    
+			<div class="row-spacing-xs clearfix" style="color: #aaa;">
+				<a class="btn btn-default" role="button">Candidate Sign Up</a> &nbsp;
+				<a class="btn btn-default" role="button">Employer Sign Up</a>
+			</div>
+		</div>
+
+		<script>
+			$('.form-control').on('focus blur', function (e) {
+				$(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+			}).trigger('blur');
+		</script>
+
+		<style>
+			/* --- material floating label --- */
+			.form-group {
+			    display: flex;
+			}
+
+			.control-label {
+			    font-size: 14px;
+			    font-weight: 400;
+			    opacity: 0.4;
+			    pointer-events: none;
+			    position: absolute;
+			    transform: translate3d(10px, 7px, 0) scale(1);
+			    transform-origin: 40px -28px;
+			    transition: 240ms;
+			}
+
+			.form-group.focused .control-label {
+			    opacity: 1;
+			    transform: scale(0.75);
+			    color: #337ab7;
+			    background-color: #fff;
+			    padding: 0 5px;
+			}
+
+			.form-control {
+			    align-self: flex-end;
+			}
+
+			.form-control::-webkit-input-placeholder {
+			    color: transparent;
+			    transition: 240ms;
+			}
+
+			.form-control:focus::-webkit-input-placeholder {
+			    transition: none;
+			}
+
+			.form-group.focused .form-control::-webkit-input-placeholder {
+			    color: #bbb;
+			}
+		</style>

@@ -59,14 +59,14 @@
 					</ul>
 					<div class="btn-toolbar pull-right">
 						<a class="btn btn-primary" href="#" role="button">Post Jobs</a>
-						<a class="btn btn-default" href="#" role="button">Login/Register</a>
+						<a class="btn btn-default" role="button" data-toggle="modal" data-target="#myModal">Login/Register</a>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<!-- hero section -->
-		<div id="heroCarousel" class="carousel slide" data-ride="carousel" data-interval="90000">
+		<div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="90000">
 			<ol class="carousel-indicators">
 				<li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
 				<li data-target="#heroCarousel" data-slide-to="1"></li>
@@ -476,6 +476,13 @@
 				</ul>
 				<p>© 1994-2015 All Rights Reserved. PracticeLink &amp; Web-CV are registered trademarks of PracticeLink, Ltd.</p>
 		</div>
+		</div>
+
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-remote="modals/login.html">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content modal-content-sm" style="width:350px;margin:0 auto;">
+		    </div>
+		  </div>
 		</div>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

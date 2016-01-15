@@ -6,3 +6,8 @@ The file manages the fonts that are used globally within this application.
 // override bootstrap base font type.
 $font-family-sans-serif: 'Roboto', sans-serif;
 
+h4,
+.modal-title {
+	font-weight: 400;
+}
+

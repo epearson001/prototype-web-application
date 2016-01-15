@@ -9,6 +9,18 @@ The file manages the social media menu that resides within the header section.
 
 .header-rule {
 	border-bottom: 1px solid $light-gray;
+	position: relative;
+
+	& span {
+	    position: absolute;
+    	top: -10px;
+		text-align: center;
+		padding: 0 10px;
+		background-color: #fff;
+		left: 50%;
+		transform: translate(-50%, 0);
+		color: #aaa;
+	}
 }
 
 
