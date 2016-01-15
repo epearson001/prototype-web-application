@@ -1,0 +1,41 @@
+/*!
+Homepage Hero SCSS File
+The file manages the specialty CSS needed for the hero section on the homepage.
+*/
+
+.hero-headline {
+	color: $white;
+    font-weight: 300;
+    font-size: 60px;
+    text-shadow: 0px 0px 50px #7e7e7e;
+    margin-top: 0;
+}
+
+.hero-description {
+    font-size: 18px;
+    font-weight: 100;
+    color: #fff;
+    max-width: 450px;
+    margin: 10px auto 25px;
+    text-shadow: 0px 0px 50px #7e7e7e;
+}
+
+/* Not currently used. Secondary option.
+.homepage-hero .btn {
+	margin-right: 5px;
+    text-shadow: 0px 0px 50px #7e7e7e;
+}
+*/
+
+.carousel-caption-container .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+	width: 100%;
+}
+
+.carousel-caption-container .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+	text-align: center;
+}
+
+.hero-btn-wrapper {
+	width: 300px;
+	margin: 10px auto 0;
+}

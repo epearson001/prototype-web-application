@@ -1,0 +1,10 @@
+/*!
+Footer Menu SCSS File
+The file manages the footer menu that resides within the footer section.
+*/
+
+.footer {
+    width: 100%;
+    background-color: $dark-gray;
+    color: #99979c; // TODO: Make this into a variable.
+}

@@ -1,0 +1,16 @@
+/*!
+Main Menu SCSS File
+The file manages the main menu that resides within the header section.
+*/
+
+.primary-navigation {
+	margin-bottom: 0;
+
+	a {
+		color: $text-color;
+	}
+
+	& > li {
+		margin-right: $margin-xs;
+	}
+}

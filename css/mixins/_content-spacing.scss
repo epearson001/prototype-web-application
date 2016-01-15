@@ -1,0 +1,55 @@
+/*!
+Content Spacing SCSS File
+The file manages the space that exists between content sections that are used globally within this application.
+*/
+
+// Basic Sizing Values
+$content-sizing-base: 5;
+
+// Padding Sizes
+$padding-xs: $content-sizing-base*1+px;
+$padding-sm: $content-sizing-base*2+px;
+$padding-md: $content-sizing-base*3+px;
+$padding-lg: $content-sizing-base*4+px;
+$padding-xl: $content-sizing-base*5+px;
+
+// Margin Sizes
+$margin-xs: $content-sizing-base*1+px;
+$margin-sm: $content-sizing-base*2+px;
+$margin-md: $content-sizing-base*3+px;
+$margin-lg: $content-sizing-base*4+px;
+$margin-xl: $content-sizing-base*5+px;
+
+// Row Spacing
+.row-spacing-xs {
+	padding-top: $content-sizing-base*1+px;
+	padding-bottom: $content-sizing-base*1+px;
+}
+
+.row-spacing-sm {
+	padding-top: $content-sizing-base*2+px;
+	padding-bottom: $content-sizing-base*2+px;
+}
+
+.row-spacing-md {
+	padding-top: $content-sizing-base*3+px;
+	padding-bottom: $content-sizing-base*3+px;
+} 
+
+.row-spacing-lg {
+	padding-top: $content-sizing-base*4+px;
+	padding-bottom: $content-sizing-base*4+px;
+} 
+
+.row-spacing-xl {
+	padding-top: $content-sizing-base*5+px;
+	padding-bottom: $content-sizing-base*5+px;
+} 
+
+.row-spacing-xxl {
+	padding-top: $content-sizing-base*16+px;
+	padding-bottom: $content-sizing-base*16+px;
+} 
+
+
+

@@ -1,0 +1,65 @@
+/*!
+Canvas Backgrounds SCSS File
+The file manages the styles governing responsive hero background images.
+*/
+
+.hero-wrapper {
+	position: relative;
+	background: url("../assets/images/employer-hero.png")no-repeat 50% 100%; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    width: 100%;
+    min-height: 500px;
+    display: table;
+    vertical-align: middle;
+
+    & + .carousel-caption-container {
+	    position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 80%;
+    }
+}
+
+.carousel-caption-container {
+	z-index: 100;
+}
+
+.carousel-control .fa:before {
+	    position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 80%;
+
+		&:hover {
+			color: $white;
+		}
+}
+
+.carousel-control .fa:hover {
+	color: $white;
+}
+
+.carousel {
+	z-index: 100;
+}
+
+.carousel-control:hover {
+	opacity: .75;
+
+	-webkit-transition: opacity .3s; /* For Safari 3.0 to 6.0 */
+    transition: opacity .3s; /* For modern browsers */
+
+	-webkit-transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955); 
+	-moz-transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955); 
+	-o-transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955); 
+	transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955); /* easeInOutQuad */
+}
+
+.carousel-inner {
+	overflow: visible;
+}

@@ -1,0 +1,12 @@
+/*!
+Content Rows SCSS File
+The file manages all content row styles.
+*/
+
+.row-light {
+	background-color: $lightest-gray;
+}
+
+body {
+	position: relative; // TODO: This probably needs to be moved somewhere else. It doesn't really belong here but I have no where else to put it.
+}

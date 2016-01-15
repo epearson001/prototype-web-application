@@ -6,17 +6,482 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">    
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>Bootstrap 101 Template</title>
+		<title>PracticeLink</title>
+
+		<!-- Google Font. Must load fast! Make sure this is first. -->
+		<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js">WebFont.load({google:{families:['Roboto:100,200,300,400,500:latin']}});</script>
 
 		<!-- Bootstrap -->
 		<link href="css/base.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1>Hello, world!</h1>
+		<!-- social media menu bar -->
+		<div class="container">
+			<div class="row row-spacing-sm">
+				<div class="col-md-12">
+					<i class="fa fa-phone fa-large"></i>&nbsp; <span>For more information, call our dedicated customer support team at (000) 000-0000.</span>
+					<ul class="social-media-icons list-unstyled list-inline pull-right">
+						<li>
+							<i class="fa fa-facebook"></i> 
+						</li>
+						<li>
+							<i class="fa fa-twitter"></i>
+						</li>
+						<li>
+							<i class="fa fa-linkedin"></i>
+						</li>
+						<li>
+							<i class="fa fa-instagram"></i>
+						</li>
+						<li>
+							<i class="fa fa-rss"></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- header rule separator -->
+		<div class="header-rule"></div>
+
+		<!-- main menu bar -->
+
+		<!-- social media menu bar -->
+		<div class="container">
+			<div class="row row-spacing-sm">
+				<div class="col-md-12">
+					<span id="primaryLogo" class="primary-logo pull-left"></span>
+					<ul class="list-unstyled list-inline primary-navigation pull-left">
+					  <li role="presentation"><a class="btn btn-link" href="#">Menu Item 1</a></li>
+					  <li role="presentation"><a class="btn btn-link" href="#">Menu Item 2</a></li>
+					  <li role="presentation"><a class="btn btn-link" href="#">Menu Item 3</a></li>
+					  <li role="presentation"><a class="btn btn-link" href="#">Menu Item 4</a></li>
+					</ul>
+					<div class="btn-toolbar pull-right">
+						<a class="btn btn-primary" href="#" role="button">Post Jobs</a>
+						<a class="btn btn-default" href="#" role="button">Login/Register</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- hero section -->
+		<div id="heroCarousel" class="carousel slide" data-ride="carousel" data-interval="90000">
+			<ol class="carousel-indicators">
+				<li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#heroCarousel" data-slide-to="1"></li>
+				<li data-target="#heroCarousel" data-slide-to="2"></li>
+			</ol>
+
+			<div class="carousel-inner">
+				<div class="item active">
+					<a href="#" class="hero-wrapper">&nbsp;</a>
+					<div class="carousel-caption-container">
+						<h1 class="hero-headline text-center">Lorem Ipsum, Dolor Sit</h1>
+						<p class="hero-description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id congue orci, a faucibus dui.</p>
+						
+						<div class="light-dropdown-menu">
+							<select class="selectpicker" data-style="btn-lg" title="Select your specialty">
+								<option>Abdominal Radiology</option>
+								<option>Abdominal Surgery</option>
+								<option>Addiction Medicine</option>
+								<option>Addiction Psychiatry</option>
+								<option>Adolescent Medicine (Family Medicine)</option>
+								<option>Adolescent Medicine (Internal Medicine)</option>
+								<option>Adolescent Medicine (Pediatrics)</option>
+								<option>Adult Cardiothoracic Anesthesiology (Anesthesiology)</option>
+								<option>Adult Congenital Heart Disease (Internal Medicine)</option>
+								<option>Adult Reconstructive Orthopedics</option>
+								<option>Advanced Heart Failure and Transplant Cardiology</option>
+								<option>Advanced Surgical Oncology</option>
+								<option>erospace Medicine</option>
+								<option>Allergy</option>
+								<option>Allergy & Immunology</option>
+								<option>Anatomic Pathology</option>
+								<option>Anatomic/Clinical Pathology</option>
+								<option>Anesthesiology</option>
+								<option>Blood Banking/Transfusion Medicine</option>
+								<option>Brain Injury Medicine (Physical Medicine & Rehabilitation)</option>
+								<option>Brain Injury Medicine (Psychiatry & Neurology)</option>
+								<option>Cardiothoracic Radiology</option>
+								<option>Cardiovascular Disease</option>
+								<option>Chemical Pathology</option>
+								<option>Child Abuse Pediatrics</option>
+								<option>Child and Adolescent Psychiatry</option>
+								<option>Child Neurology</option>
+								<option>Clinical and Laboratory Dermatological Immunology</option>
+								<option>Clinical and Laboratory Immunology (Internal Medicine)</option>
+								<option>Clinical and Laboratory Immunology (Pediatrics)</option>
+								<option>Clinical Biochemical Genetics</option>
+								<option>Clinical Cardiac Electrophysiology</option>
+								<option>Clinical Cytogenetics</option>
+								<option>CG |Clinical Genetics</option>
+								<option>Clinical Informatics (Pathology)</option>
+								<option>Clinical Informatics (Preventive Medicine)</option>
+								<option>Clinical Laboratory Immunology (Allergy & Immunology)</option>
+								<option>Clinical Molecular Genetics</option>
+								<option>Clinical Neurophysiology</option>
+								<option>Clinical Pathology</option>
+								<option>Clinical Pharmacology</option>
+								<option>Colon & Rectal Surgery</option>
+								<option>Congenital Cardiac Surgery (Thoracic Surgery)</option>
+								<option>Cosmetic Surgery</option>
+								<option>Craniofacial Surgery</option>
+								<option>Critical Care Medicine (Anesthesiology)</option>
+								<option>Critical Care Medicine (Emergency Medicine)</option>
+								<option>Critical Care Medicine (Internal Medicine)</option>
+								<option>Critical Care Medicine (Obstetrics & Gynecology)</option>
+								<option>Cytopathology</option>
+								<option>Dermatologic Surgery</option>
+								<option>Dermatology</option>
+								<option>Dermatopathology</option>
+								<option>Developmental-Behavioral Pediatrics</option>
+								<option>Diabetes</option>
+								<option>Diagnostic Radiology</option>
+								<option>Emergency Medical Services</option>
+								<option>Emergency Medicine</option>
+								<option>Emergency Medicine/Family Medicine</option>
+								<option>Endocrinology, Diabetes and Metabolism</option>
+								<option>Endovascular Surgical Neuroradiology (Neurological Surgery)</option>
+								<option>Endovascular Surgical Neuroradiology (Neurology)</option>
+								<option>Endovascular Surgical Neuroradiology (Radiology)</option>
+								<option>Epidemiology</option>
+								<option>Epilepsy</option>
+								<option>Facial Plastic Surgery</option>
+								<option>Family Medicine</option>
+								<option>Family Medicine/Preventive Medicine</option>
+								<option>Female Pelvic Medicine & Reconstructive</option>
+								<option>Female Pelvic Medicine & Reconstructive</option>
+								<option>Foot and Ankle, Orthopedics</option>
+								<option>Forensic Pathology</option>
+								<option>Forensic Psychiatry</option>
+								<option>Gastroenterology</option>
+								<option>General Practice</option>
+								<option>General Preventive Medicine</option>
+								<option>General Surgery</option>
+								<option>Geriatric Medicine (Family Medicine)</option>
+								<option>Geriatric Medicine (Internal Medicine)</option>
+								<option>Geriatric Psychiatry</option>
+								<option>Gynecological Oncology</option>
+								<option>Gynecology</option>
+								<option>Hand Surgery</option>
+								<option>Hand Surgery (Orthopedics)</option>
+								<option>Hand Surgery (Plastic Surgery)</option>
+								<option>Hand Surgery (Surgery)</option>
+								<option>Head & Neck Surgery</option>
+								<option>Hematology (Internal Medicine)</option>
+								<option>Hematology (Pathology)</option>
+								<option>Hematology/Oncology</option>
+								<option>Hepatology</option>
+								<option>Hospice & Palliative Medicine</option>
+								<option>Hospice & Palliative Medicine (Anesthesiology)</option>
+								<option>Hospice & Palliative Medicine (Emergency Medicine)</option>
+								<option>Hospice & Palliative Medicine (Family Medicine)</option>
+								<option>Hospice & Palliative Medicine (Internal Medicine)</option>
+								<option>Hospice & Palliative Medicine (Obstetrics & Gynecology)</option>
+								<option>Hospice & Palliative Medicine (Pediatrics)</option>
+								<option>Hospice & Palliative Medicine (Physical Medicine & Rehabilitation)</option>
+								<option>Hospice & Palliative Medicine (Psychiatry & Neurology)</option>
+								<option>Hospice & Palliative Medicine (Radiology)</option>
+								<option>Hospice & Palliative Medicine (Surgery)</option>
+								<option>Hospitalist</option>
+								<option>Immunology</option>
+								<option>Infectious Disease</option>
+								<option>Internal Medicine</option>
+								<option>Internal Medicine/Anesthesiology</option>
+								<option>Internal Medicine/Dermatology</option>
+								<option>Internal Medicine/Emergency Medicine</option>
+								<option>Internal Medicine/Emergency Medicine\Critical Care Medicine</option>
+								<option>Internal Medicine/Family Medicine</option>
+								<option>Internal Medicine/Medical Genetics</option>
+								<option>Internal Medicine/Neurology</option>
+								<option>Internal Medicine/Nuclear Medicine</option>
+								<option>Internal Medicine/Pediatrics</option>
+								<option>Internal Medicine/Physical Medicine & Rehabilitation</option>
+								<option>Internal Medicine/Preventive Medicine</option>
+								<option>Internal Medicine/Psychiatry</option>
+								<option>Interventional Cardiology</option>
+								<option>Legal Medicine</option>
+								<option>Maternal & Fetal Medicine</option>
+								<option>Medical Biochemical Genetics</option>
+								<option>Medical Genetics</option>
+								<option>Medical Management</option>
+								<option>Medical Microbiology</option>
+								<option>Medical Oncology</option>
+								<option>Medical Physics (Radiology)</option>
+								<option>Medical Toxicology (Emergency Medicine)</option>
+								<option>Medical Toxicology (Pediatrics)</option>
+								<option>Medical Toxicology (Preventive Medicine)</option>
+								<option>Molecular Genetic Pathology (Medical Genetics)</option>
+								<option>Molecular Genetic Pathology (Pathology)</option>
+								<option>Musculoskeletal Oncology</option>
+								<option>Musculoskeletal Radiology</option>
+								<option>Neonatal-Perinatal Medicine</option>
+								<option>Nephrology</option>
+								<option>Neurodevelopmental Disabilities (Pediatrics)</option>
+								<option>Neurodevelopmental Disabilities (Psychiatry & Neurology)</option>
+								<option>Neurological Surgery</option>
+								<option>Neurology</option>
+								<option>Neurology/DiagnosticRadiology/Neuroradiology</option>
+								<option>Neurology/Nuclear Medicine</option>
+								<option>Neurology/Physical Medicine & Rehabilitation</option>
+								<option>Neuromuscular Medicine (Neurology)</option>
+								<option>Neuromuscular Medicine (Physical Medicine & Rehabilitation)</option>
+								<option>Neuropathology</option>
+								<option>Neuropsychiatry</option>
+								<option>Neuroradiology</option>
+								<option>Neurotology (Otolaryngology)</option>
+								<option>Nuclear Cardiology</option>
+								<option>Nuclear Medicine</option>
+								<option>Nuclear Radiology</option>
+								<option>Nutrition</option>
+								<option>Obstetric Anesthesiology</option>
+								<option>Obstetrics</option>
+								<option>Obstetrics & Gynecology</option>
+								<option>Occupational Medicine</option>
+								<option>Ophthalmic Plastic and Reconstructive Surgery</option>
+								<option>Ophthalmology</option>
+								<option>Oral & Maxillofacial Surgery</option>
+								<option>Orthopedic Surgery</option>
+								<option>Orthopedic Surgery of the Spine</option>
+								<option>Orthopedic Trauma</option>
+								<option>Osteopathic Manipulative Medicine</option>
+								<option>Other (i.e., a specialty other than those appearing above)</option>
+								<option>Otolaryngology</option>
+								<option>Pain Management</option>
+								<option>Pain Medicine</option>
+								<option>Pain Medicine (Anesthesiology)</option>
+								<option>Pain Medicine (Neurology)</option>
+								<option>Pain Medicine (Physical Medicine & Rehabilitation)</option>
+								<option>Pain Medicine (Psychiatry)</option>
+								<option>Palliative Medicine</option>
+								<option>Pediatric Allergy</option>
+								<option>Pediatric Anesthesiology (Anesthesiology)</option>
+								<option>Pediatric Cardiology</option>
+								<option>Pediatric Cardiothoracic Surgery</option>
+								<option>Pediatric Critical Care Medicine</option>
+								<option>Pediatric Dermatology</option>
+								<option>Pediatric Emergency Medicine (Emergency Medicine)</option>
+								<option>Pediatric Emergency Medicine (Pediatrics)</option>
+								<option>Pediatric Endocrinology</option>
+								<option>Pediatric Gastroenterology</option>
+								<option>Pediatric Hematology/Oncology</option>
+								<option>Pediatric Infectious Disease</option>
+								<option>Pediatric Nephrology</option>
+								<option>Pediatric Ophthalmology</option>
+								<option>Pediatric Orthopedics</option>
+								<option>Pediatric Otolaryngology</option>
+								<option>Pediatric Pathology</option>
+								<option>Pediatric Pulmonology</option>
+								<option>Pediatric Radiology</option>
+								<option>Pediatric Rehabilitation Medicine</option>
+								<option>Pediatric Rheumatology</option>
+								<option>Pediatric Surgery (Neurology)</option>
+								<option>Pediatric Surgery (Surgery)</option>
+								<option>Pediatric Transplant Hepatology</option>
+								<option>Pediatric Urology</option>
+								<option>Pediatrics</option>
+								<option>Pediatrics/Anesthesiology</option>
+								<option>Pediatrics/Dermatology</option>
+								<option>Pediatrics/Emergency Medicine</option>
+								<option>Pediatrics/Medical Genetics</option>
+								<option>Pediatrics/Physical Medicine & Rehabilitation</option>
+								<option>Pediatrics/Psychiatry/Child & Adolescent Psychiatry</option>
+								<option>Pharmaceutical Medicine</option>
+								<option>Phlebology</option>
+								<option>Physical Medicine & Rehabilitation</option>
+								<option>Plastic Surgery</option>
+								<option>Plastic Surgery – Integrated</option>
+								<option>Plastic Surgery within the Head & Neck</option>
+								<option>Plastic Surgery within the Head & Neck (Otolaryngology)</option>
+								<option>Plastic Surgery within the Head & Neck (Plastic Surgery)</option>
+								<option>Procedural Dermatology</option>
+								<option>Proctology</option>
+								<option>Psychiatry</option>
+								<option>Psychiatry/Family Medicine</option>
+								<option>Psychiatry/Neurology</option>
+								<option>Psychoanalysis</option>
+								<option>Psychosomatic Medicine</option>
+								<option>Public Health and General Preventive Medicine</option>
+								<option>Pulmonary Critical Care Medicine</option>
+								<option>Pulmonary Disease</option>
+								<option>Radiation Oncology</option>
+								<option>Radiological Physics</option>
+								<option>Radiology</option>
+								<option>Reproductive Endocrinology and Infertility</option>
+								<option>Rheumatology</option>
+								<option>Selective Pathology</option>
+								<option>Sleep Medicine</option>
+								<option>Sleep Medicine (Anesthesiology)</option>
+								<option>Sleep Medicine (Internal Medicine)</option>
+								<option>Sleep Medicine (Otolaryngology)</option>
+								<option>Sleep Medicine (Pediatrics)</option>
+								<option>leep Medicine (Psychiatry & Neurology)</option>
+								<option>Spinal Cord Injury Medicine</option>
+								<option>Sports Medicine (Emergency Medicine)</option>
+								<option>Sports Medicine (Family Medicine)</option>
+								<option>Sports Medicine (Internal Medicine)</option>
+								<option>Sports Medicine (Orthopedic Surgery)</option>
+								<option>Sports Medicine (Pediatrics)</option>
+								<option>Sports Medicine (Physical Medicine & Rehabilitation)</option>
+								<option>Surgery (Obstetrics & Gynecology)</option>
+								<option>Surgery (Urology)</option>
+								<option>Surgical Critical Care (Surgery)</option>
+								<option>Surgical Oncology</option>
+								<option>Thoracic Surgery</option>
+								<option>Thoracic Surgery - Integrated</option>
+								<option>Transplant Hepatology (Internal Medicine)</option>
+								<option>Transplant Surgery</option>
+								<option>Trauma Surgery</option>
+								<option>Undersea & Hyperbaric Medicine (Emergency Medicine)</option>
+								<option>Undersea & Hyperbaric Medicine (Preventive Medicine)</option>
+								<option>Unspecified</option>
+								<option>Urgent Care Medicine</option>
+								<option>Urology</option>
+								<option>Vascular and Interventional Radiology</option>
+								<option>Vascular Medicine</option>
+								<option>Vascular Neurology</option>
+								<option>Vascular Surgery</option>
+								<option>Vascular Surgery- Integrated</option>
+							</select>
+						</div>
+
+						<div class="hero-btn-wrapper text-center">
+							<a class="btn btn-default btn-lg btn-block light" href="#" role="button">Search Jobs</a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<a href="#" class="hero-wrapper">&nbsp;</a>
+					<div class="carousel-caption-container">
+						<h1 class="hero-headline text-center">Lorem Ipsum, Dolor Sit</h1>
+						<p class="hero-description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id congue orci, a faucibus dui.</p>
+
+						<div class="hero-btn-wrapper text-center">
+							<a class="btn btn-default btn-lg btn-block light" href="#" role="button">Create Account</a>
+						</div>
+					</div>
+
+				</div>
+				<div class="item">
+					<a href="#" class="hero-wrapper">&nbsp;</a>
+					<div class="carousel-caption-container">
+						<h1 class="hero-headline text-center">Lorem Ipsum, Dolor Sit</h1>
+						<p class="hero-description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id congue orci, a faucibus dui.</p>
+
+						<div class="hero-btn-wrapper text-center">
+							<a class="btn btn-default btn-lg btn-block light" href="#" role="button">Learn More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a class="left carousel-control" href="#heroCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<i class="fa fa-chevron-left"></i>
+			</a>
+			<a class="right carousel-control" href="#heroCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<i class="fa fa-chevron-right"></i>
+			</a>
+		</div>
+
+		<!-- Business Lines Section -->
+		<div class="homepage-business-lines row-light">
+			<div class="container">
+				<div class="row row-spacing-xxl">
+					<div class="col-md-3">
+						<div class="text-center">
+							<img src="assets/images/business-line-1.png" class="business-line-icon">
+							<h4>Lorem Ipsum</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id congue orci, a faucibus dui. Nam lacinia a magna atrew adipiscing suscipit convallis.</p>
+							<ul class="list-unstyled">
+							  <li><a href="...">Important Link Number 1 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							  <li><a href="...">Important Link Number 2 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							  <li><a href="...">Important Link Number 3 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							  <li><a href="...">Important Link Number 4 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							</ul>
+							<a class="btn btn-default" href="#" role="button">View More</a>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="text-center">
+							<img src="assets/images/business-line-2.png" class="business-line-icon">
+							<h4>Lorem Ipsum</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id congue orci, a faucibus dui. Nam lacinia a magna atrew adipiscing suscipit convallis.</p>
+							<ul class="list-unstyled">
+							  <li><a href="...">Important Link Number 1 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							  <li><a href="...">Important Link Number 2 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							  <li><a href="...">Important Link Number 3 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							  <li><a href="...">Important Link Number 4 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							</ul>
+							<a class="btn btn-default" href="#" role="button">View More</a>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="text-center">
+							<img src="assets/images/business-line-3.png" class="business-line-icon">
+							<h4>Lorem Ipsum</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id congue orci, a faucibus dui. Nam lacinia a magna atrew adipiscing suscipit convallis.</p>
+							<ul class="list-unstyled">
+							  <li><a href="...">Important Link Number 1 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							  <li><a href="...">Important Link Number 2 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							  <li><a href="...">Important Link Number 3 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							  <li><a href="...">Important Link Number 4 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							</ul>
+							<a class="btn btn-default" href="#" role="button">View More</a>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="text-center">
+							<img src="assets/images/business-line-4.png" class="business-line-icon">
+							<h4>Lorem Ipsum</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id congue orci, a faucibus dui. Nam lacinia a magna atrew adipiscing suscipit convallis.</p>
+							<ul class="list-unstyled">
+							  <li><a href="...">Important Link Number 1 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							  <li><a href="...">Important Link Number 2 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							  <li><a href="...">Important Link Number 3 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							  <li><a href="...">Important Link Number 4 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							</ul>
+							<a class="btn btn-default" href="#" role="button">View More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Tiny Footer Option B -->
+
+		<!-- header rule separator --><!--
+		<div class="header-rule"></div>
+		-->
+
+		<div class="footer row-spacing-xxl">
+			<div class="container"> 
+				<ul class="footer-links list-unstyled list-inline"> 
+					<li><a href="...">Link Number 1</a></li>
+					<li><a href="...">Link Number 2</a></li>
+					<li><a href="...">Link Number 3</a></li>
+					<li><a href="...">Link Number 4</a></li> 
+					<li><a href="...">Link Number 5</a></li>
+					<li><a href="...">Link Number 6</a></li>
+					<li><a href="...">Link Number 7</a></li>
+					<li><a href="...">Link Number 8</a></li> 
+				</ul>
+				<ul class="footer-links list-unstyled list-inline"> 
+					<li><a href="...">Link Number 1</a></li>
+					<li><a href="...">Link Number 2</a></li>
+					<li><a href="...">Link Number 3</a></li>
+					<li><a href="...">Link Number 4</a></li> 
+				</ul>
+				<p>© 1994-2015 All Rights Reserved. PracticeLink &amp; Web-CV are registered trademarks of PracticeLink, Ltd.</p>
+		</div>
+		</div>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.3/js/bootstrap-select.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>

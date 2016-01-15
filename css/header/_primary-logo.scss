@@ -1,0 +1,15 @@
+/*!
+Primary Logo SCSS File
+The file manages the logo that resides within the header section.
+*/
+
+.primary-logo {
+    background: url("../assets/images/logo.png");
+    background: none,url("../assets/images/logo.svg");
+    width: 130px;
+    height: 28px;
+    margin-right: $margin-xl;
+    float: left;
+    background-repeat: no-repeat;
+    margin-top: 3px; // Custom margin setting.
+}

@@ -2,5 +2,40 @@
 Master SCSS File
  */
 
+// Mixin Styles
+// Must appear before Bootstrap in order to override variables.
+@import "mixins/colors";
+@import "mixins/interactions";
+@import "mixins/typography";
+@import "mixins/content-spacing";
+@import "mixins/other-variables";
+
 // Imported Bootstrap Files
 @import "../assets/stylesheets/bootstrap";
+
+// Imported Font Awesome Files
+@import "../assets/stylesheets/font-awesome";
+
+// Imported Bootstrap Select Files
+@import "../assets/stylesheets/bootstrap-select/bootstrap-select";
+@import "../assets/stylesheets/bootstrap-select/variables";
+
+// Header Styles
+@import "header/primary-logo";
+@import "header/main-menu";
+@import "header/social-media-menu";
+@import "header/main-menu-functions"; 
+
+// Hero Styles
+@import "heroes/canvas-backgrounds";
+@import "heroes/homepage-hero";
+
+//Footer Styles
+@import "footer/footer-menu";
+
+// Marketing Sections
+@import "marketing-sections/business-lines";
+
+// Element Styles
+@import "elements/buttons";
+@import "elements/content-rows";
