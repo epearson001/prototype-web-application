@@ -7395,6 +7395,19 @@ The file manages the main menu that resides within the header section.
   .primary-navigation > li {
     margin-right: 5px; }
 
+.main-menu-bar .search-input-group {
+  width: 200px; }
+  .main-menu-bar .search-input-group .input-group-addon {
+    background: white !important;
+    padding: 6px; }
+  .main-menu-bar .search-input-group .form-control {
+    border-right: 0;
+    box-shadow: 0 0 0;
+    border-color: #ccc; }
+  .main-menu-bar .search-input-group button {
+    border: 0;
+    background: transparent; }
+
 /*!
 Social Media Menu SCSS File
 The file manages the social media menu that resides within the header section.
@@ -7535,7 +7548,24 @@ The file manages the footer menu that resides within the footer section.
 .footer {
   width: 100%;
   background-color: #2a2730;
-  color: #99979c; }
+  color: #99979c;
+  padding-bottom: 55px; }
+
+.footer-links li {
+  margin-bottom: 5px; }
+
+.secondary-logo {
+  background: none, url("../assets/images/logo-white.svg");
+  width: 130px;
+  height: 28px;
+  margin-right: 25px;
+  float: left;
+  background-repeat: no-repeat;
+  margin-top: 3px; }
+
+.secondary-logo-wrapper {
+  width: 100%;
+  float: left; }
 
 /*!
 Business Lines SCSS File

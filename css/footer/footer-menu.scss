@@ -7,4 +7,24 @@ The file manages the footer menu that resides within the footer section.
     width: 100%;
     background-color: $dark-gray;
     color: #99979c; // TODO: Make this into a variable.
+    padding-bottom: 55px;
+}
+
+.footer-links li {
+	margin-bottom: 5px;
+}
+
+.secondary-logo {
+    background: none, url("../assets/images/logo-white.svg");
+    width: 130px;
+    height: 28px;
+    margin-right: 25px;
+    float: left;
+    background-repeat: no-repeat;
+    margin-top: 3px;
+}
+
+.secondary-logo-wrapper {
+	width: 100%;
+	float: left;
 }

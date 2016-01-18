@@ -14,3 +14,23 @@ The file manages the main menu that resides within the header section.
 		margin-right: $margin-xs;
 	}
 }
+
+.main-menu-bar {
+	.search-input-group {
+	    width: 200px;
+
+	    .input-group-addon{
+		    background: white !important; 
+		    padding: 6px;
+		}
+		.form-control{
+			border-right:0; 
+			box-shadow:0 0 0; 
+			border-color:#ccc;
+		}
+		button{
+		    border:0;
+		    background:transparent;
+		}
+	}
+}

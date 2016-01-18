@@ -14,12 +14,27 @@
 		<!-- Bootstrap -->
 		<link href="css/base.css" rel="stylesheet">
 	</head>
-	<body>
+	<body id="body">
 		<!-- social media menu bar -->
 		<div class="container">
 			<div class="row row-spacing-sm">
-				<div class="col-md-12">
-					<i class="fa fa-phone fa-large"></i>&nbsp; <span>For more information, call our dedicated customer support team at (000) 000-0000.</span>
+				<div class="col-md-9">
+					<div id="adCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="8000">
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="carousel-caption-container">
+									<i class="fa fa-phone fa-large"></i>&nbsp; <span>For more information, call our dedicated customer support team at (000) 000-0000.</span>
+								</div>
+							</div>
+							<div class="item">
+								<div class="carousel-caption-container">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id congue orci, a faucibus dui.
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+			<div class="col-md-3">
 					<ul class="social-media-icons list-unstyled list-inline pull-right">
 						<li>
 							<i class="fa fa-facebook"></i> 
@@ -45,19 +60,23 @@
 		<div class="header-rule"></div>
 
 		<!-- main menu bar -->
-
-		<!-- social media menu bar -->
-		<div class="container">
+		<div class="container main-menu-bar">
 			<div class="row row-spacing-sm">
 				<div class="col-md-12">
 					<span id="primaryLogo" class="primary-logo pull-left"></span>
 					<ul class="list-unstyled list-inline primary-navigation pull-left">
-					  <li role="presentation"><a class="btn btn-link" href="#">Menu Item 1</a></li>
-					  <li role="presentation"><a class="btn btn-link" href="#">Menu Item 2</a></li>
-					  <li role="presentation"><a class="btn btn-link" href="#">Menu Item 3</a></li>
-					  <li role="presentation"><a class="btn btn-link" href="#">Menu Item 4</a></li>
+					  <li role="presentation"><a class="btn btn-link" href="#">Candidates</a></li>
+					  <li role="presentation"><a class="btn btn-link" href="#">Employers</a></li>
 					</ul>
 					<div class="btn-toolbar pull-right">
+						<div class="input-group search-input-group pull-left">
+							<input type="text" class="form-control" placeholder="Search Jobs">
+							<div class="input-group-addon">
+								<button type="submit">
+									<i class="fa fa-search"></i>
+								</button>  
+							</div>
+						</div>
 						<a class="btn btn-primary" role="button" data-toggle="modal" data-target="#signupModal">Post Jobs</a>
 						<a class="btn btn-default" role="button" data-toggle="modal" data-target="#loginModal">Login/Register</a>
 					</div>
@@ -75,7 +94,7 @@
 
 			<div class="carousel-inner">
 				<div class="item active">
-					<a href="#" class="hero-wrapper">&nbsp;</a>
+					<a href="#" class="hero-wrapper" style="background-image: linear-gradient(to left, rgb(0, 92, 151), rgb(54, 55, 149));">&nbsp;</a>
 					<div class="carousel-caption-container">
 						<h1 class="hero-headline text-center">Lorem Ipsum, Dolor Sit</h1>
 						<p class="hero-description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id congue orci, a faucibus dui.</p>
@@ -364,15 +383,16 @@
 
 				</div>
 				<div class="item">
-					<a href="#" class="hero-wrapper">&nbsp;</a>
+					<a href="#" class="hero-wrapper" style="background-image: linear-gradient(to left, rgb(254, 140, 0), rgb(248, 54, 0));">&nbsp;</a>
 					<div class="carousel-caption-container">
 						<h1 class="hero-headline text-center">Lorem Ipsum, Dolor Sit</h1>
 						<p class="hero-description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id congue orci, a faucibus dui.</p>
 
 						<div class="hero-btn-wrapper text-center">
-							<a class="btn btn-default btn-lg btn-block light" href="#" role="button">Learn More</a>
+							<a class="btn btn-default btn-lg btn-block light" href="#" role="button">Create Account</a>
 						</div>
 					</div>
+
 				</div>
 			</div>
 
@@ -390,58 +410,44 @@
 		<div class="homepage-business-lines row-light">
 			<div class="container">
 				<div class="row row-spacing-xxl">
-					<div class="col-md-3">
+					<div class="col-md-4">
 						<div class="text-center">
 							<img src="assets/images/business-line-1.png" class="business-line-icon">
-							<h4>Lorem Ipsum</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id congue orci, a faucibus dui. Nam lacinia a magna atrew adipiscing suscipit convallis.</p>
+							<h4>Candidates</h4>
+							<p>Looking for your next practice but don’t know where to start? You’re in the right place. Sign up and receive a free subscription to PracticeLink Magazine!</p>
 							<ul class="list-unstyled">
-							  <li><a href="...">Important Link Number 1 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
-							  <li><a href="...">Important Link Number 2 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
-							  <li><a href="...">Important Link Number 3 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
-							  <li><a href="...">Important Link Number 4 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+								<li><a href="...">Search for Jobs &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+								<li><a href="...">Attend Career Fairs &amp; Workshops &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+								<li><a href="...">View our Company Directory &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>							  
+								<li><a href="...">Read our Success Stories &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
 							</ul>
 							<a class="btn btn-default" href="#" role="button">View More</a>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-4">
 						<div class="text-center">
 							<img src="assets/images/business-line-2.png" class="business-line-icon">
-							<h4>Lorem Ipsum</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id congue orci, a faucibus dui. Nam lacinia a magna atrew adipiscing suscipit convallis.</p>
+							<h4>Employers</h4>
+							<p>We provide what you need to make the physician recruitment process effective and efficient without expensive contracts or fees.</p>
 							<ul class="list-unstyled">
-							  <li><a href="...">Important Link Number 1 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
-							  <li><a href="...">Important Link Number 2 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
-							  <li><a href="...">Important Link Number 3 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
-							  <li><a href="...">Important Link Number 4 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							  <li><a href="...">Post Jobs &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							  <li><a href="...">Advertise with Us &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							  <li><a href="...">Learn about our PRO Solutions &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							  <li><a href="...">Read our Employer Testimonials&nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
 							</ul>
 							<a class="btn btn-default" href="#" role="button">View More</a>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-4">
 						<div class="text-center">
 							<img src="assets/images/business-line-3.png" class="business-line-icon">
-							<h4>Lorem Ipsum</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id congue orci, a faucibus dui. Nam lacinia a magna atrew adipiscing suscipit convallis.</p>
+							<h4>Publications</h4>
+							<p>The award winning PracticeLink Magazine provides articles and advice you need to advance your career and understand the business of medicine.</p>
 							<ul class="list-unstyled">
-							  <li><a href="...">Important Link Number 1 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
-							  <li><a href="...">Important Link Number 2 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
-							  <li><a href="...">Important Link Number 3 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
-							  <li><a href="...">Important Link Number 4 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
-							</ul>
-							<a class="btn btn-default" href="#" role="button">View More</a>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="text-center">
-							<img src="assets/images/business-line-4.png" class="business-line-icon">
-							<h4>Lorem Ipsum</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id congue orci, a faucibus dui. Nam lacinia a magna atrew adipiscing suscipit convallis.</p>
-							<ul class="list-unstyled">
-							  <li><a href="...">Important Link Number 1 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
-							  <li><a href="...">Important Link Number 2 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
-							  <li><a href="...">Important Link Number 3 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
-							  <li><a href="...">Important Link Number 4 &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							  <li><a href="...">Read PracticeLink Magazine &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							  <li><a href="...">Download "The Guide" &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							  <li><a href="...">Read White Papers &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
+							  <li><a href="...">Download Case Studies &nbsp;<i class="fa fa-long-arrow-right"></i></a></li>
 							</ul>
 							<a class="btn btn-default" href="#" role="button">View More</a>
 						</div>
@@ -458,24 +464,92 @@
 
 		<div class="footer row-spacing-xxl">
 			<div class="container"> 
-				<ul class="footer-links list-unstyled list-inline"> 
-					<li><a href="...">Link Number 1</a></li>
-					<li><a href="...">Link Number 2</a></li>
-					<li><a href="...">Link Number 3</a></li>
-					<li><a href="...">Link Number 4</a></li> 
-					<li><a href="...">Link Number 5</a></li>
-					<li><a href="...">Link Number 6</a></li>
-					<li><a href="...">Link Number 7</a></li>
-					<li><a href="...">Link Number 8</a></li> 
-				</ul>
-				<ul class="footer-links list-unstyled list-inline"> 
-					<li><a href="...">Link Number 1</a></li>
-					<li><a href="...">Link Number 2</a></li>
-					<li><a href="...">Link Number 3</a></li>
-					<li><a href="...">Link Number 4</a></li> 
-				</ul>
-				<p>© 1994-2015 All Rights Reserved. PracticeLink &amp; Web-CV are registered trademarks of PracticeLink, Ltd.</p>
+				<div class="col-md-4">
+					<p class="secondary-logo-wrapper"><span id="secondaryLogo" class="secondary-logo"></span></p>
+					<p>Subscribe to access our newest jobs on the go.</p>
+					<p style="margin-bottom: 20px;">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Email Address">
+							<span class="input-group-btn"><button class="btn btn-primary" type="submit">Sign Up</button></span>
+						</div>
+					</p>
+					<p>&nbsp;</p>
+					<p><strong>Speed up your job search.</strong> Use Practicelink and get notifed about new jobs, apply to jobs with a single click, and get a free subscription to PracticeLink Magazine!</p>
+					<p>PracticeLink, Ltd.<br>415 2nd Avenue<br>Hinton, WV 25951</p>
+				</div>
+				<div class="col-md-5">
+					<div class="col-md-6">
+						<p style="color: #fff;">For Job Seekers</p>
+						<ul class="footer-links list-unstyled"> 
+							<li><a href="...">Find the perfect job</a></li>
+							<li><a href="...">Sign up for your free account</a></li>
+							<li><a href="...">Create your free Web-CV</a></li>
+							<li><a href="...">Read PracticeLink Magazine</a></li> 
+							<li><a href="...">Company Directory</a></li>
+						</ul>
+						<p>&nbsp;</p>
+						<p style="color: #fff;">For Employers</p>
+						<ul class="footer-links list-unstyled"> 
+							<li><a href="...">Post Jobs</a></li>
+							<li><a href="...">Advertising</a></li>
+							<li><a href="...">Our Partners</a></li> 
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<p style="color: #fff;">About Us</p>
+						<ul class="footer-links list-unstyled"> 
+							<li><a href="...">Our Story</a></li>
+							<li><a href="...">Careers</a></li>
+							<li><a href="...">Press</a></li>
+							<li><a href="...">Contact Us</a></li> 
+							<li><a href="...">Send Feedback</a></li>
+						</ul>
+						<p>&nbsp;</p>
+						<p style="color: #fff;">Legal</p>
+						<ul class="footer-links list-unstyled"> 
+							<li><a href="...">Terms of Service</a></li>
+							<li><a href="...">Privacy Policy</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<p style="color: #fff;">Recent Tweets</p>
+					<p>PracticeLink <a href="...">@practicelink</a></p>
+					<ul class="footer-links list-unstyled"> 
+						<li>RT <a href="...">@DrDonnie</a> You should check out our magazine for helpful advice.</li>
+						<li><p><i style="font-size: .75em">1 hour ago</i></p></li>
+						<li>Evaluating more than one job? Keep your search straight by organizing notes in a job-search binder. <a href="...">#FindAJobFriday</a> <a href="...">pic.twitter.com/dSzVV0ECTp</a></li>
+						<li><p><i style="font-size: .75em">1 hour ago</i></p></li>
+						<li>Physicians, simplify your job search by identifying your must-haves: <a href="...">https://www.youtube.com/watch?v=3JXWS-uwGa0&feature=youtu.be …</a></li>
+						<li><p><i style="font-size: .75em">1 hour ago</i></p></li>
+					</ul>
+				</div>
+			</div>
 		</div>
+		<div class="row-spacing-md" style="background-color: #1a181e">
+			<div class="container">
+				<div class="col-md-12" style="position: relative">
+					<div style="font-size: .85em;" class="pull-left">© 1994-2015 PracticeLink, Ltd. All Rights Reserved.</div>
+					<div style="position: absolute;left: 50%;"><a href="#body" style="color: #99979c"><i class="fa fa-arrow-circle-o-up fa-lg"></i></a></div>
+					<ul class="social-media-icons list-unstyled list-inline pull-right">
+					<li>
+						<i class="fa fa-facebook"></i> 
+					</li>
+					<li>
+						<i class="fa fa-twitter"></i>
+					</li>
+					<li>
+						<i class="fa fa-linkedin"></i>
+					</li>
+					<li>
+						<i class="fa fa-instagram"></i>
+					</li>
+					<li>
+						<i class="fa fa-rss"></i>
+					</li>
+				</ul>
+				</div>
+			</div>
 		</div>
 
 		<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" data-remote="modals/login.html">
