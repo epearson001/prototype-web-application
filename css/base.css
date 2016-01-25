@@ -7589,6 +7589,24 @@ The file manages all button styles.
   margin: 0 auto;
   width: 300px; }
 
+.dropdown-toggle {
+  padding-left: 9px; }
+
+.btn-group.open > .dropdown-toggle,
+.btn-group.open > .dropdown-toggle:hover,
+.btn-group.open > .dropdown-toggle:active,
+.btn-group > .dropdown-toggle:hover,
+.btn-group > .dropdown-toggle:active,
+.btn-group > .dropdown-toggle {
+  background-color: transparent !important;
+  box-shadow: none; }
+
+.btn-group > .dropdown-toggle:focus {
+  border-color: #66afe9 !important;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6) !important;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6) !important; }
+
 .light-dropdown-menu .btn-lg, .light-dropdown-menu .btn-group-lg > .btn {
   border-color: #ffffff;
   color: #ffffff;
@@ -7596,6 +7614,15 @@ The file manages all button styles.
   .light-dropdown-menu .btn-lg:hover, .light-dropdown-menu .btn-group-lg > .btn:hover {
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0.15); }
+
+.std-dropdown-menu .filter-option {
+  color: #c8c8c8;
+  font-weight: 400; }
+.std-dropdown-menu .selected .btn-default > .filter-option {
+  color: #666666; }
+
+.open .filter-option {
+  color: #a9a9a9; }
 
 .btn.light {
   color: #ffffff;
@@ -7733,3 +7760,62 @@ The file manages all button styles.
     color: #2c4b82; }
   .nav.modal-tabs li.active .background-icon, .nav.modal-tabs li.active h4 {
     color: #ffffff; }
+
+/*!
+Forms SCSS File
+The file manages all content general form styles.
+*/
+.field-section-header {
+  font-weight: 600;
+  color: #1f3863;
+  margin-bottom: 8px; }
+
+.group-radio .btn-default {
+  padding: 0; }
+  .group-radio .btn-default a {
+    padding: 6px 12px;
+    display: block; }
+
+.group-radio .btn-default,
+.group-radio input[type="radio"],
+.group-radio .btn-default a,
+.group-radio input[type="radio"] a {
+  opacity: .90;
+  color: #a9a9a9;
+  text-decoration: none;
+  background: none; }
+
+.group-radio .btn-default {
+  margin-right: 5px; }
+
+.group-radio .btn-default:hover a:hover,
+.group-radio .btn-default:hover input[type="radio"] a:hover {
+  color: inherit; }
+
+.group-radio .btn-default:hover,
+.group-radio .btn-default:hover input[type="radio"]
+.group-radio .btn-default:hover a,
+.group-radio .btn-default:hover input[type="radio"] a {
+  opacity: 1.0;
+  color: #666666; }
+
+.group-radio .btn-default.active,
+.group-radio .btn-default.active input[type="radio"],
+.group-radio .btn-default.active a,
+.group-radio .btn-default.active input[type="radio"] a {
+  border-color: #2d4a7d;
+  opacity: 1.0;
+  color: #2d4a7d;
+  box-shadow: none;
+  background-color: white;
+  outline: 0; }
+
+.group-radio .btn-default.active a:active,
+.group-radio .btn-default.active:focus,
+.group-radio .btn-default a:active,
+.group-radio .btn-default:focus,
+.group-radio .btn-default.active:active,
+.group-radio .btn-default:active {
+  outline: 0;
+  background-color: none;
+  box-shadow: none; }

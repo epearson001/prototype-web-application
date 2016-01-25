@@ -28,29 +28,96 @@
 			  <div class="tab-content">
 			    <div role="tabpanel" class="tab-pane active" id="login">
 					<form>
-					<div class="form-group">
-						<label class="control-label" or="exampleInputEmail1">Email Address</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address">
-						</div>
 						<div class="form-group">
-							<label class="control-label" for="exampleInputPassword1">Password</label>
-							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-						</div>
-						<div class="checkbox" style="margin-top: -5PX;margin-bottom: 20px;">
-							<label style="color: #aaa;">
-								<input type="checkbox"> Keep me logged in
-							</label>
-						</div>
-					<button type="submit" class="btn btn-primary btn-block">Submit</button>
-					<p class="help-block text-center row-spacing-sm">You accept our <a href="...">terms</a> and <a href="...">policies</a>.</p>
-				<form>
+							<label class="control-label" or="exampleInputEmail1">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email address">
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="exampleInputPassword1">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+							</div>
+							<div class="checkbox" style="margin-top: -5PX;margin-bottom: 20px;">
+								<label style="color: #aaa;">
+									<input type="checkbox"> Keep me logged in
+								</label>
+							</div>
+						<button type="submit" class="btn btn-primary btn-block">Log in</button>
+						<p class="help-block text-center row-spacing-sm">You accept our <a href="...">terms</a> and <a href="...">policies</a>.</p>
+					<form>
 				<div class="row-spacing-xs"><div class="header-rule"><span>OR</span></div></div>  
 				<div class="row-spacing-lg" style="color: #aaa;padding-bottom: 0;">
 					<button id="createAccount" type="button" class="btn btn-default btn-block">Create Account</button>
 				</div>
 
 			    </div>
-			    <div role="tabpanel" class="tab-pane" id="register">tab 2</div>
+			    <div role="tabpanel" class="tab-pane" id="register">
+
+			    	<form class="form">
+			    		<div class="field-section-header">Select account type</div>
+						<div class="btn-group group-radio" data-toggle="buttons">
+							<label class="btn btn-default active">
+								<input name="year" value="Candidate" type="radio" id="candidateSignupBtn"><a href="#candidateSignup" aria-controls="candidate-signup" role="tab" data-toggle="tab">Candidate</a>
+							</label>
+							<label class="btn btn-default">
+								<input name="year" value="Employer" type="radio" id="employerSignupBtn"><a href="#employerSignup" aria-controls="employer-signup" role="tab" data-toggle="tab">Employer</a>
+							</label>
+				        </div>
+			        	<div class="tab-content">
+							<div role="tabpanel" class="tab-pane fade in active" id="candidateSignup">
+					        	<div class="row-spacing-xl"><div class="header-rule"></div></div>
+								<div class="field-section-header">Claim your FREE candidate account</div>
+								<div class="form-group">
+									<label class="control-label" or="exampleInputEmail1">Email address</label>
+										<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email address">
+									</div>
+									<div class="form-group">
+										<label class="control-label" for="exampleInputPassword1">Password</label>
+										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+									</div>
+								<button type="submit" class="btn btn-primary btn-block">Create Account</button>
+								<p class="help-block text-center row-spacing-sm">You accept our <a href="...">terms</a> and <a href="...">policies</a>.</p>
+							</div>
+							<div role="tabpanel" class="tab-pane fade" id="employerSignup">
+								<div class="row-spacing-xl"><div class="header-rule"></div></div>
+								<div class="field-section-header">Claim your FREE employer account</div>
+								<div class="row">
+									<div class="form-group col-md-6" style="padding-right: 5px;">
+										<label class="control-label" or="exampleInputEmail1">First name</label>
+										<input type="text" class="form-control" id="exampleInputEmail1" placeholder="First name">
+									</div>
+									<div class="form-group col-md-6" style="padding-left: 5px;">
+										<label class="control-label" for="exampleInputPassword1">Last name</label>
+										<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last name">
+									</div>
+									<!--
+									<div class="std-dropdown-menu">
+										<select class="selectpicker form-group col-md-12" title="Select your employer type">
+											<option>Abdominal Radiology</option>
+											<option>Abdominal Surgery</option>
+										</select>
+									</div>
+									-->
+									<div class="form-group col-md-12">
+										<label class="control-label" for="exampleInputPassword1">Employer phone</label>
+										<input type="phone" class="form-control" id="exampleInputPassword1" placeholder="Employer phone">
+									</div>
+									<div class="form-group col-md-12">
+										<label class="control-label" or="exampleInputEmail1">Email address</label>
+											<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email address">
+										</div>
+										<div class="form-group col-md-12">
+											<label class="control-label" for="exampleInputPassword1">Password</label>
+											<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+										</div>
+									</div>
+									<button type="submit" class="btn btn-primary btn-block">Create Account</button>
+									<p class="help-block text-center row-spacing-sm" style="margin-bottom: 0;">You accept our <a href="...">terms</a> and <a href="...">policies</a>.</p>
+								</div>
+							</div>
+						</div>
+					<form>
+
+			  	</div>
 			  </div>
 		</div>
 
@@ -61,6 +128,15 @@
 
 			$('#createAccount').click(function(){
 				$('[href*="register"]').trigger('click');
+			});
+
+			$(".selectpicker").selectpicker();
+
+			$(function() {
+			  $('.selectpicker').on('change', function(){
+			    var selected = $(this).find("option:selected").val();
+			    $(this).parent(3).addClass('selected');
+			  });			  
 			});
 		</script>
 

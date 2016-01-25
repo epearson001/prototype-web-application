@@ -1,0 +1,69 @@
+/*!
+Forms SCSS File
+The file manages all content general form styles.
+*/
+
+.field-section-header {
+	font-weight: 600;
+	color: #1f3863;
+	margin-bottom: 8px;
+}
+
+.group-radio .btn-default {
+	padding: 0;
+
+	a {
+		padding: 6px 12px;
+		display: block;
+	}
+}
+
+.group-radio .btn-default,
+.group-radio input[type="radio"],
+.group-radio .btn-default a,
+.group-radio input[type="radio"] a {
+	opacity: .90;
+	color: #a9a9a9;
+	text-decoration: none;
+	background: none;
+}
+
+.group-radio .btn-default {
+	margin-right: 5px;
+}
+
+.group-radio .btn-default:hover a:hover ,
+.group-radio .btn-default:hover input[type="radio"] a:hover {
+	color: inherit;
+}
+
+.group-radio .btn-default:hover ,
+.group-radio .btn-default:hover input[type="radio"]
+.group-radio .btn-default:hover a ,
+.group-radio .btn-default:hover input[type="radio"] a {
+	opacity: 1.0;
+	color: #666666;
+}
+
+.group-radio .btn-default.active,
+.group-radio .btn-default.active input[type="radio"],
+.group-radio .btn-default.active a,
+.group-radio .btn-default.active input[type="radio"] a {
+	border-color: #2d4a7d;
+	opacity: 1.0;
+	color: #2d4a7d;
+	box-shadow: none;
+	background-color: white;
+	outline: 0;
+}
+
+.group-radio .btn-default.active a:active,
+.group-radio .btn-default.active:focus,
+.group-radio .btn-default a:active,
+.group-radio .btn-default:focus,
+.group-radio .btn-default.active:active,
+.group-radio .btn-default:active {
+	outline: 0;
+	background-color: none;
+	box-shadow: none;
+}

@@ -9,7 +9,7 @@
 		<title>PracticeLink</title>
 
 		<!-- Google Font. Must load fast! Make sure this is first. -->
-		<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js">WebFont.load({google:{families:['Roboto:100,200,300,400,500:latin']}});</script>
+		<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js">WebFont.load({google:{families:['Roboto:100,200,300,400,500,600:latin']}});</script>
 
 		<!-- Bootstrap -->
 		<link href="css/base.css" rel="stylesheet">
@@ -377,8 +377,13 @@
 						<p class="hero-description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id congue orci, a faucibus dui.</p>
 
 						<div class="hero-btn-wrapper text-center">
-							<a class="btn btn-default btn-lg btn-block light" href="#" role="button">Create Account</a>
+							<a class="btn btn-default btn-lg btn-block light" href="#" role="button" id="createAccountLink" data-target="#loginModal" data-toggle="modal" >Create Account</a>
 						</div>
+						<script>
+							$('#createAccountLink').click(function(e){
+								$('[href*="register"]').trigger('click');
+							});
+						</script>
 					</div>
 
 				</div>
@@ -389,7 +394,7 @@
 						<p class="hero-description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id congue orci, a faucibus dui.</p>
 
 						<div class="hero-btn-wrapper text-center">
-							<a class="btn btn-default btn-lg btn-block light" href="#" role="button">Create Account</a>
+							<a class="btn btn-default btn-lg btn-block light" href="#" role="button" id="createAccountLink" data-target="#loginModal" data-toggle="modal" >Create Account</a>
 						</div>
 					</div>
 
