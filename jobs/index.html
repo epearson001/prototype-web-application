@@ -288,7 +288,7 @@
 				<div class="row row-spacing-xxl" style="padding-top: 23px;padding-bottom: 30px;">
 					<div class="col-md-12">
 						<div class="sorting" style="font-size: 85%; color: #aaa; margin-bottom: 35px;">
-							<div class="pull-left">24,287 jobs found</div><div class="pull-right"><a href="...">Job Title</a> &nbsp;|&nbsp; <a href="...">Location</a> &nbsp;|&nbsp; <a href="...">Relevance</a> &nbsp;|&nbsp; <a href="...">Date</a></div><div class="pull-right" style="margin-right:15px;">Sort by:</div>
+							<div id="resultCount" class="pull-left"></div><div class="pull-right"><a href="...">Job Title</a> &nbsp;|&nbsp; <a href="...">Location</a> &nbsp;|&nbsp; <a href="...">Relevance</a> &nbsp;|&nbsp; <a href="...">Date</a></div><div class="pull-right" style="margin-right:15px;">Sort by:</div>
 						</div>
 						<table id="jobSearchResults" class="table table-hover" style="border: 1px solid #ddd;">
 							<tbody>  
@@ -579,6 +579,12 @@
 		        'dataType': "json",
 		        'success': function (data) {
 		            json = data;
+
+		            if (data) {
+		            	var total = data.length.toLocaleString('en');
+		            }
+
+        			$('#resultCount').append(total, " jobs found");
 		        }
 		    });
 		    return json;
@@ -586,27 +592,32 @@
 
 		//console.log(JSON.stringify(json[0].job_id));
 
-	    $(jobSearchResults).each(function(index, element){
-	         $('#jobSearchResults').append('<tr>\
-	         									<th>\
-	         										<div style="background-color:#ddd;height:55px;width:80px;">\
-	         											<img src="" style="height:55px;width:80px;">\
-         											</div>\
-     											</th>\
-	         									<td><h4 style="margin-top: 0;margin-bottom: 2px;font-size: 16px;"> '+json[0].job_header+' </h4> '+json[0].specialty_name+', '+json[0].facility_name+' </td>\
-	         									<td><h4 style="margin-top: 0;margin-bottom: 2px;font-size: 16px;"> '+json[0].city+',  '+json[0].state_name+' </h4> United States </td>\
-	         									<td class="text-right"></td>\
-         									</tr>\
-         									<tr>\
-	         									<th>\
-	         										<div style="background-color:#ddd;height:55px;width:80px;">\
-	         											<img src="" style="height:55px;width:80px;">\
-         											</div>\
-     											</th>\
-	         									<td><h4 style="margin-top: 0;margin-bottom: 2px;font-size: 16px;"> '+json[1].job_header+' </h4> '+json[1].specialty_name+', '+json[1].facility_name+' </td>\
-	         									<td><h4 style="margin-top: 0;margin-bottom: 2px;font-size: 16px;"> '+json[1].city+',  '+json[1].state_name+' </h4> United States </td>\
-	         									<td class="text-right"></td>\
-         									</tr>');       
+	    $.each(json, function(index, job){
+
+	    	var fmemberName = job.member_name.replace(/ /g,''); // Unused. Pulls out all whitespace from record.
+
+	    	var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+			var firstDate = new Date(2008,01,12);
+			var secondDate = new Date().getTime();
+
+			console.log(secondDate);
+
+			var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
+
+	        var resultRecord = '<tr>\
+ 									<th>\
+ 										<div style="height:55px;width:80px;position:relative;border:1px solid #ddd;">\
+ 											<img src="http://cdn.practicelink.com/content/clientimages/'+job.member_id+'/thumb'+job.member_id+'.jpg" style="max-height:44px;max-width:64px;position: absolute;top: 50%;left:50%;transform: translate(-50%,-50%);">\
+											</div>\
+										</th>\
+ 									<td><h4 style="margin-top: 0;margin-bottom: 2px;font-size: 16px;"> '+job.job_header+' </h4> '+job.specialty_name+', '+job.facility_name+' </td>\
+ 									<td><h4 style="margin-top: 0;margin-bottom: 2px;font-size: 16px;"> '+job.city+',  '+job.state_name+' </h4> United States </td>\
+ 									<td class="text-right">Time Since</td>\
+								</tr>'; 
+
+			 $('#jobSearchResults').append(resultRecord);
+
+			 return index<50;    
 	    });
 		</script>
 	</body>
