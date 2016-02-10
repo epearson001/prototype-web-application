@@ -10056,6 +10056,63 @@ The file manages all button styles.
   right: 0;
   left: auto; }
 
+/* line 259, /Users/ericpearson/prototype-web-application/css/elements/_buttons.scss */
+tr .reveal-on-hover,
+.reveal-while-active .hide-on-hover {
+  display: none; }
+
+/* line 264, /Users/ericpearson/prototype-web-application/css/elements/_buttons.scss */
+tr:hover .reveal-on-hover,
+.reveal-while-active .reveal-on-hover {
+  display: block; }
+
+/* line 269, /Users/ericpearson/prototype-web-application/css/elements/_buttons.scss */
+tr:hover .hide-on-hover {
+  display: none; }
+
+/* line 273, /Users/ericpearson/prototype-web-application/css/elements/_buttons.scss */
+.favorite-toggle:hover i {
+  opacity: 1.0 !important;
+  cursor: pointer; }
+
+/* line 278, /Users/ericpearson/prototype-web-application/css/elements/_buttons.scss */
+.job-search-results tr.selected,
+.job-search-results tr.selected:hover {
+  font-style: italic;
+  background-color: #ddd;
+  color: #aaa; }
+  /* line 284, /Users/ericpearson/prototype-web-application/css/elements/_buttons.scss */
+  .job-search-results tr.selected .logo-wrapper,
+  .job-search-results tr.selected:hover .logo-wrapper {
+    opacity: .6; }
+    /* line 287, /Users/ericpearson/prototype-web-application/css/elements/_buttons.scss */
+    .job-search-results tr.selected .logo-wrapper img,
+    .job-search-results tr.selected:hover .logo-wrapper img {
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1);
+      opacity: .3; }
+
+/* line 296, /Users/ericpearson/prototype-web-application/css/elements/_buttons.scss */
+.job-search-results .table tr.highlight {
+  border: 1px solid #f58546;
+  color: #f58546; }
+  /* line 300, /Users/ericpearson/prototype-web-application/css/elements/_buttons.scss */
+  .job-search-results .table tr.highlight td,
+  .job-search-results .table tr.highlight th {
+    border-width: 0;
+    border-bottom: 1px solid #f58546; }
+
+/* line 307, /Users/ericpearson/prototype-web-application/css/elements/_buttons.scss */
+.job-search-results .table tr.featured {
+  border: 1px solid #f58546;
+  background-color: #f58546;
+  color: #fff; }
+  /* line 313, /Users/ericpearson/prototype-web-application/css/elements/_buttons.scss */
+  .job-search-results .table tr.featured td,
+  .job-search-results .table tr.featured th {
+    border-width: 0;
+    border-bottom: 1px solid #fff; }
+
 /*!
 Content Rows SCSS File
 The file manages all content row styles.
